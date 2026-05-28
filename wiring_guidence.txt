@@ -1,0 +1,48 @@
+===================================================================
+             WIRING GUIDE: COMFORT PREDICTOR          
+===================================================================
+Target Hardware : Arduino Uno / Arduino Nano (ATmega328P)
+I2C Address     : 0x27 (Verified LCD Backpack)
+Data Protocol   : I2C Bus (Shared) & Single-Wire Digital
+-------------------------------------------------------------------
+* dont touch components directly even its not powered. before thaat, touch any safe grounded metels.. 
+* if wires misaligned the component most probably killed..
+
+1. POWER RAIL CONNECTIONS (Breadboard Bus Lines)
+===================================================================
+* Connect Arduino 5V pin  ---> To Breadboard Red Positive (+) Rail
+* Connect Arduino GND pin ---> To Breadboard Black Negative (-) Rail
+
+
+2. 16x2 I2C DISPLAY WIRING (Uses Hardware I2C Bus)
+===================================================================
+Pin on Display LCD    Pin on Arduino Uno/Nano     Wire Description
+-------------------------------------------------------------------
+GND                  --->  GND Rail              Ground Power
+VCC                  --->  5V Rail               +5V Main Power
+SDA                  --->  Analog Pin A4         Serial Data Line
+SCL                  --->  Analog Pin A5         Serial Clock Line
+
+
+3. DHT-11 TEMPERATURE & HUMIDITY SENSOR WIRING
+===================================================================
+Pin on DHT-11 Module  Pin on Arduino Uno/Nano     Wire Description
+-------------------------------------------------------------------
+GND / (-)            --->  GND Rail              Ground Power
+VCC / (+)            --->  5V Rail               +5V Main Power
+DATA / OUT / S       --->  Digital Pin D2        Signal Data Line
+
+* NOTE FOR BARE CHIPS: If using a bare 4-pin DHT-11 chip (not 
+  mounted on a 3-pin PCB board), connect a 10k Ohm resistor 
+  between the VCC wire and the DATA wire to pull the signal high.
+
+
+4. MASTER CIRCUIT SYSTEM CHECKSUM
+===================================================================
+[✓] Display SDA and SCL are connected to A4 and A5 respectively.
+[✓] DHT-11 Data out line is connected directly to Digital Pin 2.
+[✓] All components share a common Ground (GND) track line.
+[✓] Backlight potentiometer on back of LCD is dialed to show text.
+
+===================================================================
+EOF - END OF FILE
