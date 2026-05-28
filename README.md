@@ -1,9 +1,7 @@
 # Comfort-Study-Circumstance-Predictor
 I have been distrubed weather and noise related issue! therefore, i wanted to know and maintain the level to make me focused.. although , it is a enumeration process of using sensors.. note: the comfort parameters are based on my inference..
 
-# Comfort Study Circumstance Predictor (TinyML) 
-
-An AI-driven climate assistant built with an Arduino that predicts human-perceived atmospheric comfort. Instead of using basic hardcoded rules, this project runs an embedded **Multiple Linear Regression model** on the edge to process live temperature and moisture data.
+A climate predictor built with an Arduino that predicts human-perceived atmospheric comfort. Instead of using basic hardcoded rules, this project runs an embedded **Multiple Linear Regression model** on the edge to process live temperature and moisture data.
 
 # How It Works
 The human body experiences stuffiness as a combined effect of both heat and humidity. This project uses an embedded machine learning formula to process live telemetry:
