@@ -33,18 +33,19 @@ for wiring see the wiring_guide.txt
 # Required Arduino Libraries
 
 Install these libraries using the Arduino IDE Library Manager before uploading the code:
-1. **DHT sensor library** *(by Adafruit)*
-2. **LiquidCrystal_I2C** *(by Frank de Brabander)*
+1. DHT sensor library (by Adafruit)
+2. LiquidCrystal_I2C (by Frank de Brabander)
 
 ---
 
 ## ⚙️ Visual Output System
-
+ 
 The screen updates every 3 seconds to show live readings and the AI comfort prediction tier:
-* **Comfort: PERFECT** (Score $\le 1.5$) — Ideal indoor comfort conditions.
-* **Comfort: NORMAL** (Score $1.6$ to $3.0$) — Standard indoor baseline climate.
-* **Comfort: STUFFY** (Score $3.1$ to $4.2$) — Rising temperature or humidity saturation.
-* **Comfort: WARNING** (Score $> 4.2$) — High climate discomfort; ventilation advised.
+* Comfort: PERFECT (Score \ 1.5) — Ideal indoor comfort conditions.
+* Comfort: NORMAL** (Score 1.6 to 
+3.0) — Standard indoor baseline climate.
+* Comfort: STUFFY** (Score 3.1 to 4.2) — Rising temperature or humidity saturation.
+* Comfort: WARNING** (Score > 4.2) — High climate discomfort; ventilation advised.
 
 ---
 
